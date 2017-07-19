@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="jquery,validate,验证插件," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="特殊需求Email地址所有邮箱都符合“名称@域名”的规律 规则说明   类型 规则 备注     名称 只能由26个英文字母、0-9数字、”-“（英文中的连词号）、”&amp;#95;”(下划线)、”.”（英文点）组成； “-“、”&amp;#95;”、”.”不能用作开头和结尾；最长为64个字符 不区分大小写   域名 见域名验证规则 -    常见名称组合   类型 示例 备注     纯数字 123456@q">
+<meta name="keywords" content="jquery,validate,验证插件">
+<meta property="og:type" content="article">
+<meta property="og:title" content="验证规则说明">
+<meta property="og:url" content="http://yoursite.com/2017/07/19/验证规则说明/index.html">
+<meta property="og:site_name" content="Oceanbaby Notes">
+<meta property="og:description" content="特殊需求Email地址所有邮箱都符合“名称@域名”的规律 规则说明   类型 规则 备注     名称 只能由26个英文字母、0-9数字、”-“（英文中的连词号）、”&amp;#95;”(下划线)、”.”（英文点）组成； “-“、”&amp;#95;”、”.”不能用作开头和结尾；最长为64个字符 不区分大小写   域名 见域名验证规则 -    常见名称组合   类型 示例 备注     纯数字 123456@q">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2017/07/19/验证规则说明/验证规则说明/58b00bf331311.jpg">
+<meta property="og:updated_time" content="2017-07-19T05:40:34.689Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="验证规则说明">
+<meta name="twitter:description" content="特殊需求Email地址所有邮箱都符合“名称@域名”的规律 规则说明   类型 规则 备注     名称 只能由26个英文字母、0-9数字、”-“（英文中的连词号）、”&amp;#95;”(下划线)、”.”（英文点）组成； “-“、”&amp;#95;”、”.”不能用作开头和结尾；最长为64个字符 不区分大小写   域名 见域名验证规则 -    常见名称组合   类型 示例 备注     纯数字 123456@q">
+<meta name="twitter:image" content="http://yoursite.com/2017/07/19/验证规则说明/验证规则说明/58b00bf331311.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/07/19/验证规则说明/"/>
+
+
+
+
+
+  <title>验证规则说明 | Oceanbaby Notes</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Oceanbaby Notes</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">好记心不如烂笔头</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/19/验证规则说明/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="oceanbaby715">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars7.githubusercontent.com/u/8721378?v=4&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Oceanbaby Notes">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">验证规则说明</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-19T12:27:55+08:00">
+                2017-07-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/Jquery/" itemprop="url" rel="index">
+                    <span itemprop="name">Jquery</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/Jquery/插件/" itemprop="url" rel="index">
+                    <span itemprop="name">插件</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/Jquery/插件/validate/" itemprop="url" rel="index">
+                    <span itemprop="name">validate</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/07/19/验证规则说明/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2017/07/19/验证规则说明/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-eye"></i> 阅读次数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="特殊需求"><a href="#特殊需求" class="headerlink" title="特殊需求"></a>特殊需求</h1><h2 id="Email地址"><a href="#Email地址" class="headerlink" title="Email地址"></a>Email地址</h2><p>所有邮箱都符合<strong>“名称@域名”</strong>的规律</p>
+<h3 id="规则说明"><a href="#规则说明" class="headerlink" title="规则说明"></a>规则说明</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>规则</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>名称</td>
+<td>只能由26个英文字母、0-9数字、”-“（英文中的连词号）、”&#95;”(下划线)、”.”（英文点）组成； “-“、”&#95;”、”.”不能用作开头和结尾；最长为64个字符</td>
+<td>不区分大小写</td>
+</tr>
+<tr>
+<td>域名</td>
+<td><a href="#域名" title="见域名规则">见域名验证规则</a></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="常见名称组合"><a href="#常见名称组合" class="headerlink" title="常见名称组合"></a>常见名称组合</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>示例</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>纯数字</td>
+<td>123456@qq.com</td>
+<td>-</td>
+</tr>
+<tr>
+<td>纯字母</td>
+<td>abc@qq.com</td>
+<td>-</td>
+</tr>
+<tr>
+<td>字母数字混合</td>
+<td>abc123@qq.com</td>
+<td>-</td>
+</tr>
+<tr>
+<td>带点的</td>
+<td>abc.123@qq.com</td>
+<td>-</td>
+</tr>
+<tr>
+<td>带下划线</td>
+<td>abc_123@qq.com</td>
+<td>-</td>
+</tr>
+<tr>
+<td>带连接线</td>
+<td>abc-123@qq.com</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><code>邮箱名称不能以“_”、“-”开头或者结尾，也不能包含其他特殊符号。</code></p>
+<h3 id="邮箱-后缀的类型"><a href="#邮箱-后缀的类型" class="headerlink" title="邮箱@后缀的类型"></a>邮箱@后缀的类型</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>示例</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一级域名</td>
+<td>123456@qq.com</td>
+<td>-</td>
+</tr>
+<tr>
+<td>二级域名</td>
+<td>123456@vip.qq.com</td>
+<td>-</td>
+</tr>
+<tr>
+<td>三级域名</td>
+<td>123456@abc.vip.qq.com</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="小知识"><a href="#小知识" class="headerlink" title="小知识"></a>小知识</h3><ol>
+<li>目前域名也是支持中文的，见<a href="http://互联网.中国/index.jsp" target="_blank" rel="external">http://互联网.中国/index.jsp</a>   ，例如：刘海洋@互联网.中国(<code>由于此类使用范围不广，所以我们的验证中不包含</code>)</li>
+</ol>
+<hr>
+<h2 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h2><h3 id="规则说明-1"><a href="#规则说明-1" class="headerlink" title="规则说明"></a>规则说明</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>规则</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>字符</td>
+<td>仅支持数字、英文和“-”（英文中的连词号），”-“不能用作开头和结尾</td>
+<td>不区分英文字母的大小写</td>
+</tr>
+<tr>
+<td>长度</td>
+<td>最长 67 个字符 ( 包括后缀 .com 、.top、.net 、 .org 等 )</td>
+<td></td>
+</tr>
+<tr>
+<td>域名级别</td>
+<td>各级域名之间用实点（.）连接 ，最少两级域名，如：qq.com，最多四级域名，如：haiyang.vip.qq.com</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="小知识-1"><a href="#小知识-1" class="headerlink" title="小知识"></a>小知识</h3><p>1、域名由两个或两个以上的词构成, 中间由点号分隔开。最右边的那个词称为顶级域名<br>2、顶级域名<br>顶级域名又分为两类：<br>一是国家顶级域名（national top-level domainnames，简称nTLDs），200多个国家都按照ISO3166国家代码分配了顶级域名，例如中国是cn，美国是us，日本是jp等；<br>二是国际顶级域名（international top-level domain names，简称iTDs），例如表示工商企业的 .Com .Top，表示网络提供商的.net，表示非盈利组织的.org等。大多数域名争议都发生在com的顶级域名下，因为多数公司上网的目的都是为了赢利。为加强域名管理，解决域名资源的紧张，Internet协会、Internet分址机构及世界知识产权组织（WIPO）等国际组织经过广泛协商， 在原来三个国际通用顶级域名：（com）的基础上，新增加了7个国际通用顶级域名：firm（公司企业）、store（销售公司或企业）、Web（突出WWW活动的单位）、arts（突出文化、娱乐活动的单位）、rec (突出消遣、娱乐活动的单位）、info(提供信息服务的单位）、nom(个人），并在世界范围内选择新的注册机构来受理域名注册申请。<br>3、二级域名<br>二级域名是指顶级域名之下的域名，在国际顶级域名下，它是指域名注册人的网上名称，例如 ibm，yahoo，microsoft等；在国家顶级域名下，它是表示注册企业类别的符号，例如com，.top，edu，gov，net等。<br>中国在国际互联网络信息中心（Inter NIC） 正式注册并运行的顶级域名是CN，这也是中国的一级域名。在顶级域名之下，中国的二级域名又分为类别域名和行政区域名两类。类别域名共7个， 包括用于科研机构的ac；用于工商金融企业的com、top；用于教育机构的edu；用于政府部门的 gov；用于互联网络信息中心和运行中心的net；用于非盈利组织的org。而行政区域名有34个，分别对应于中国各省、自治区和直辖市。<br>4、三级域名<br>三级域名用字母（ A～Z，a～z，大小写等）、数字（0～9）和连接符（－）组成， 各级域名之间用实点（.）连接，三级域名的长度不能超过20个字符。如无特殊原因，建议采用申请人的英文名（或者缩写）或者汉语拼音名 （或者缩写） 作为三级域名，以保持域名的清晰性和简洁性。<br>5、常见顶级域名</p>
+<ol>
+<li>com</li>
+<li>net</li>
+<li>org</li>
+<li>gov.cn</li>
+<li>info</li>
+<li>cc</li>
+<li>com.cn</li>
+<li>net.cn</li>
+<li>org.cn</li>
+<li>name</li>
+<li>biz</li>
+<li>tv</li>
+<li>cn</li>
+<li>mobi</li>
+<li>name</li>
+<li>sh</li>
+<li>ac</li>
+<li>io</li>
+<li>tw</li>
+<li>com.tw</li>
+<li>hk</li>
+<li>com.hk</li>
+<li>ws</li>
+<li>travel</li>
+<li>us</li>
+<li>tm</li>
+<li>la</li>
+<li>e.uk</li>
+<li>org.uk</li>
+<li>ltd.uk</li>
+<li>plc.uk</li>
+<li>in</li>
+<li>eu</li>
+<li>it</li>
+<li>jp</li>
+</ol>
+<hr>
+<h2 id="网址"><a href="#网址" class="headerlink" title="网址"></a>网址</h2><h3 id="规则说明-2"><a href="#规则说明-2" class="headerlink" title="规则说明"></a>规则说明</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>规则</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>协议</td>
+<td>“https://” 或 “http://” 或 空</td>
+<td>大小写无关，微信浏览器仅支持这两种协议</td>
+</tr>
+<tr>
+<td>主机名</td>
+<td>域名 <a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=190" title="见域名规则" target="_blank" rel="external">见域名验证规则</a> 或 IP <a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=180" title="IP验证规则" target="_blank" rel="external">IP验证规则</a></td>
+<td></td>
+</tr>
+<tr>
+<td>长度</td>
+<td>网址最长为2000个字符</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><p>无协议网址 www.baidu.com<br>有协议网址 <a href="https://www.baidu.com" target="_blank" rel="external">https://www.baidu.com</a><br>使用IP地址的网址 <a href="http://202.96.209.133" target="_blank" rel="external">http://202.96.209.133</a></p>
+<h3 id="网址（URL）格式"><a href="#网址（URL）格式" class="headerlink" title="网址（URL）格式"></a>网址（URL）格式</h3><p>URL由三部分组成：资源类型、存放资源的主机域名、资源文件名。<br>URL的一般语法格式为(带方括号[]的为可选项)：<br>[protocol ://] hostname[:port] / path / [;parameters][?query]#fragment</p>
+<h4 id="protocol（协议）"><a href="#protocol（协议）" class="headerlink" title="protocol（协议）"></a>protocol（协议）</h4><p>指定使用的传输协议，下表列出 protocol 属性的有效方案名称。</p>
+<p><code>若URL中不指定协议类型，则默认为HTTP协议。</code></p>
+<p>file 资源是本地计算机上的文件。格式file:///，注意后边应是三个斜杠。</p>
+<p>ftp 通过 FTP访问资源。格式 FTP://</p>
+<p>http 通过 HTTP 访问该资源。 格式 HTTP://</p>
+<p>https 通过安全的 HTTPS 访问该资源。 格式 HTTPS://</p>
+<p>mailto 资源为电子邮件地址，通过 SMTP 访问。 格式 mailto:</p>
+<p>MMS 通过 支持MMS（流媒体）协议的播放该资源。（代表软件：Windows Media Player）格式 MMS://</p>
+<h4 id="hostname（主机名）"><a href="#hostname（主机名）" class="headerlink" title="hostname（主机名）"></a>hostname（主机名）</h4><p>是指存放资源的服务器的域名系统(DNS) 主机名或 IP 地址。有时，在主机名前也可以包含连接到服务器所需的用户名和密码（格式：username:password@hostname）。</p>
+<p>####port（端口号）<br>整数，可选，省略时使用方案的默认端口，各种传输协议都有默认的端口号，如http的默认端口为80。如果输入时省略，则使用默认端口号。有时候出于安全或其他考虑，可以在服务器上对端口进行重定义，即采用非标准端口号，此时，URL中就不能省略端口号这一项。</p>
+<h4 id="path（路径）"><a href="#path（路径）" class="headerlink" title="path（路径）"></a>path（路径）</h4><p>由零或多个“/”符号隔开的字符串，一般用来表示主机上的一个目录或文件地址。</p>
+<p>####parameters（参数）<br>这是用于指定特殊参数的可选项。</p>
+<h4 id="query-查询"><a href="#query-查询" class="headerlink" title="query(查询)"></a>query(查询)</h4><p>可选，用于给动态网页（如使用CGI、ISAPI、PHP/JSP/ASP/ASP。NET等技术制作的网页）传递参数，可有多个参数，用“&amp;”符号隔开，每个参数的名和值用“=”符号隔开。</p>
+<h4 id="fragment（信息片断）"><a href="#fragment（信息片断）" class="headerlink" title="fragment（信息片断）"></a>fragment（信息片断）</h4><p>字符串，用于指定网络资源中的片断。例如一个网页中有多个名词解释，可使用fragment直接定位到某一名词解释</p>
+<hr>
+<h2 id="国内手机号码"><a href="#国内手机号码" class="headerlink" title="国内手机号码"></a>国内手机号码</h2><h3 id="规则说明-3"><a href="#规则说明-3" class="headerlink" title="规则说明"></a>规则说明</h3><p>国内手机号码为11位数字，前两位只能为:13\14\15\17\18。</p>
+<h3 id="三大运营商最新的手机号段分配情况"><a href="#三大运营商最新的手机号段分配情况" class="headerlink" title="三大运营商最新的手机号段分配情况"></a>三大运营商最新的手机号段分配情况</h3><p><strong>移动：</strong></p>
+<table>
+<thead>
+<tr>
+<th>号段</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>13x</td>
+<td>134X(0-8)、135、136、137、138、139</td>
+</tr>
+<tr>
+<td>14x</td>
+<td>147(数据卡）</td>
+</tr>
+<tr>
+<td>15x</td>
+<td>150、151、152、157X(0-7\9)(TD)、158、159</td>
+</tr>
+<tr>
+<td>17x</td>
+<td>178（4G）</td>
+</tr>
+<tr>
+<td>18x</td>
+<td>182 、183、184、187（3G\4G)、188(3G)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>联通：</strong></p>
+<table>
+<thead>
+<tr>
+<th>号段</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>13x</td>
+<td>130、131、132</td>
+</tr>
+<tr>
+<td>14x</td>
+<td>145(数据卡）</td>
+</tr>
+<tr>
+<td>15x</td>
+<td>155、156</td>
+</tr>
+<tr>
+<td>17x</td>
+<td>176（4G）</td>
+</tr>
+<tr>
+<td>18x</td>
+<td>185(3G)、186(3G)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>电信：</strong></p>
+<table>
+<thead>
+<tr>
+<th>号段</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>13x</td>
+<td>133、（1349卫通）</td>
+</tr>
+<tr>
+<td>15x</td>
+<td>153</td>
+</tr>
+<tr>
+<td>17x</td>
+<td>177（4G）、173（最近刚开通）</td>
+</tr>
+<tr>
+<td>18x</td>
+<td>180(3G)、181(3G)、189(3G)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>虚拟运营商：</strong></p>
+<table>
+<thead>
+<tr>
+<th>号段</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>170</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="手机和电话号码组成"><a href="#手机和电话号码组成" class="headerlink" title="手机和电话号码组成"></a>手机和电话号码组成</h3><p>据介绍，目前我国使用的手机号码为11位，其中各段有不同的编码方向</p>
+<p>前3位：网络识别号</p>
+<p>第4～7位：地区编码</p>
+<p>第8～11位：用户号码</p>
+<p>电话号码编码规则：国家代码 + 地区代码 + 电话号码（服务商代码 + 4位用户号码）</p>
+<hr>
+<h2 id="国内电话号码"><a href="#国内电话号码" class="headerlink" title="国内电话号码"></a>国内电话号码</h2><h3 id="规则说明-4"><a href="#规则说明-4" class="headerlink" title="规则说明"></a>规则说明</h3><p><strong>区号-号码-分机号</strong></p>
+<p>例如：021-65017738-336</p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>规则</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>区号以0开头，3位或4位</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>号码由7位或8位数字组成</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>分机号码由1-6位数字组成</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>区号与号码之间可以无连接符，也可以“-”连接</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>分机号可有可无</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="国际电话号码"><a href="#国际电话号码" class="headerlink" title="国际电话号码"></a>国际电话号码</h2><p>国际电话号码在公司业务中还未接到过需求，待有实际需求时再整理</p>
+<hr>
+<h2 id="大陆身份证号（一代）"><a href="#大陆身份证号（一代）" class="headerlink" title="大陆身份证号（一代）"></a>大陆身份证号（一代）</h2><h3 id="规则说明-5"><a href="#规则说明-5" class="headerlink" title="规则说明"></a>规则说明</h3><table>
+<thead>
+<tr>
+<th>编号</th>
+<th>说明</th>
+<th>规则</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>前1、2位数字</td>
+<td>所在省（直辖市、自治区）的代码</td>
+<td>规则见说明1</td>
+</tr>
+<tr>
+<td>第3、4位数字</td>
+<td>所在地级市（自治州）的代码</td>
+<td>从01到99</td>
+</tr>
+<tr>
+<td>第5、6位数字</td>
+<td>所在区（县、自治县、县级市）的代码</td>
+<td>从00到99</td>
+</tr>
+<tr>
+<td>第7—12位数字</td>
+<td>出生年、月、日</td>
+<td>2位年2位月2位日，年从00到99，月从01到12，日从01到31</td>
+</tr>
+<tr>
+<td>第13、14位数字</td>
+<td>所在地的派出所的代码</td>
+<td>从00到99</td>
+</tr>
+<tr>
+<td>第15位数字</td>
+<td>表示性别</td>
+<td>奇数表示男性（1、3、5、7、9），偶数表示女性（0、2、4、6、8）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="所在省（直辖市、自治区）的代码"><a href="#所在省（直辖市、自治区）的代码" class="headerlink" title="所在省（直辖市、自治区）的代码"></a>所在省（直辖市、自治区）的代码</h3><p>11-15 京 津 冀 晋 蒙   </p>
+<p>21-23 辽 吉 黑    </p>
+<p>31-37 沪 苏浙 皖 闽 赣 鲁   </p>
+<p>41-46 豫 鄂 湘 粤 桂 琼   </p>
+<p>50-54 渝 川 贵 云 藏   </p>
+<p>61-65 陕 甘青 宁 新   </p>
+<p>81-82 港 澳</p>
+<h3 id="身份证号码的规则"><a href="#身份证号码的规则" class="headerlink" title="身份证号码的规则"></a>身份证号码的规则</h3><h4 id="15位身份证号码组成："><a href="#15位身份证号码组成：" class="headerlink" title="15位身份证号码组成："></a>15位身份证号码组成：</h4><p>ddddddyymmddxxs共15位，其中：</p>
+<p>dddddd为6位的地方代码，根据这6位可以获得该身份证号所在地。</p>
+<p>yy为2位的年份代码，是身份证持有人的出身年份。</p>
+<p>mm为2位的月份代码，是身份证持有人的出身月份。</p>
+<p>dd为2位的日期代码，是身份证持有人的出身日。</p>
+<p>这6位在一起组成了身份证持有人的出生日期。</p>
+<p>xx为2位的顺序码，这个是随机数。</p>
+<p>s为1位的性别代码，奇数代表男性，偶数代表女性。</p>
+<h4 id="18位身份证号码组成："><a href="#18位身份证号码组成：" class="headerlink" title="18位身份证号码组成："></a>18位身份证号码组成：</h4><p>ddddddyyyymmddxxsp共18位，其中：</p>
+<p>其他部分都和15位的相同。年份代码由原来的2位升级到4位。最后一位为校验位。</p>
+<hr>
+<h2 id="大陆身份证号（二代）"><a href="#大陆身份证号（二代）" class="headerlink" title="大陆身份证号（二代）"></a>大陆身份证号（二代）</h2><h3 id="规则说明-6"><a href="#规则说明-6" class="headerlink" title="规则说明"></a>规则说明</h3><table>
+<thead>
+<tr>
+<th>编号</th>
+<th>说明</th>
+<th>规则</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>前1、2位数字</td>
+<td>所在省（直辖市、自治区）的代码</td>
+<td>规则见说明1</td>
+</tr>
+<tr>
+<td>第3、4位数字</td>
+<td>所在地级市（自治州）的代码</td>
+<td>从01到99</td>
+</tr>
+<tr>
+<td>第5、6位数字</td>
+<td>所在区（县、自治县、县级市）的代码</td>
+<td>从00到99</td>
+</tr>
+<tr>
+<td>第7—14位数字</td>
+<td>出生年、月、日</td>
+<td>4位年2位月2位日，年从1900到2100，月从01到12，日从01到31</td>
+</tr>
+<tr>
+<td>第15、16位数字</td>
+<td>所在地的派出所的代码</td>
+<td>从00到99</td>
+</tr>
+<tr>
+<td>第17位数字</td>
+<td>表示性别</td>
+<td>奇数表示男性（1、3、5、7、9），偶数表示女性（0、2、4、6、8）</td>
+</tr>
+<tr>
+<td>第18位数字</td>
+<td>校检码</td>
+<td>它是用来检验身份证的正确性。规则见说明2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="所在省（直辖市、自治区）的代码-1"><a href="#所在省（直辖市、自治区）的代码-1" class="headerlink" title="所在省（直辖市、自治区）的代码"></a>所在省（直辖市、自治区）的代码</h3><p>11-15 京 津 冀 晋 蒙   </p>
+<p>21-23 辽 吉 黑    </p>
+<p>31-37 沪 苏浙 皖 闽 赣 鲁   </p>
+<p>41-46 豫 鄂 湘 粤 桂 琼   </p>
+<p>50-54 渝 川 贵 云 藏   </p>
+<p>61-65 陕 甘青 宁 新   </p>
+<p>81-82 港 澳</p>
+<h3 id="校验码规则"><a href="#校验码规则" class="headerlink" title="校验码规则"></a>校验码规则</h3><p>（1）十七位数字本体码加权求和公式 </p>
+<p>S = Sum(Ai * Wi), i = 0, … , 16 ，先对前17位数字的权求和 </p>
+<p>Ai:表示第i位置上的身份证号码数字值 </p>
+<p>Wi:表示第i位置上的加权因子 </p>
+<p>Wi: 7 9 10 5 8 4 2 1 6 3 7 9 10 5 8 4 2 </p>
+<p>（2）计算模 </p>
+<p>Y = mod(S, 11) </p>
+<p>（3）通过模得到对应的校验码 </p>
+<p>Y: 0 1 2 3 4 5 6 7 8 9 10 </p>
+<p>校验码: 1 0 X 9 8 7 6 5 4 3 2</p>
+<p>也就是说，如果得到余数为1则最后的校验位p应该为对应的0.如果校验位不是，则该身份证号码不正确。</p>
+<h3 id="身份证号码的规则-1"><a href="#身份证号码的规则-1" class="headerlink" title="身份证号码的规则"></a>身份证号码的规则</h3><h4 id="15位身份证号码组成：-1"><a href="#15位身份证号码组成：-1" class="headerlink" title="15位身份证号码组成："></a>15位身份证号码组成：</h4><p>ddddddyymmddxxs共15位，其中：</p>
+<p>dddddd为6位的地方代码，根据这6位可以获得该身份证号所在地。</p>
+<p>yy为2位的年份代码，是身份证持有人的出身年份。</p>
+<p>mm为2位的月份代码，是身份证持有人的出身月份。</p>
+<p>dd为2位的日期代码，是身份证持有人的出身日。</p>
+<p>这6位在一起组成了身份证持有人的出生日期。</p>
+<p>xx为2位的顺序码，这个是随机数。</p>
+<p>s为1位的性别代码，奇数代表男性，偶数代表女性。</p>
+<h4 id="18位身份证号码组成：-1"><a href="#18位身份证号码组成：-1" class="headerlink" title="18位身份证号码组成："></a>18位身份证号码组成：</h4><p>ddddddyyyymmddxxsp共18位，其中：</p>
+<p>其他部分都和15位的相同。年份代码由原来的2位升级到4位。最后一位为校验位。</p>
+<hr>
+<h2 id="完整日期格式"><a href="#完整日期格式" class="headerlink" title="完整日期格式"></a>完整日期格式</h2><h4 id="规则说明-7"><a href="#规则说明-7" class="headerlink" title="规则说明"></a>规则说明</h4><table>
+<thead>
+<tr>
+<th>编号</th>
+<th>规则</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>年-月-日 时:分：秒</td>
+<td>例如：2017-02-28 11:19:20</td>
+</tr>
+<tr>
+<td>2</td>
+<td>月只能是从01-12</td>
+<td>-</td>
+</tr>
+<tr>
+<td>3</td>
+<td>日只能从01-31</td>
+<td>-</td>
+</tr>
+<tr>
+<td>4</td>
+<td>匹配出二月份（28天或29天）</td>
+<td>-</td>
+</tr>
+<tr>
+<td>5</td>
+<td>小时支持12小时制和24小时制</td>
+<td>-</td>
+</tr>
+<tr>
+<td>6</td>
+<td>分钟00-59</td>
+<td>-</td>
+</tr>
+<tr>
+<td>7</td>
+<td>秒00-59</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="腾讯QQ号"><a href="#腾讯QQ号" class="headerlink" title="腾讯QQ号"></a>腾讯QQ号</h2><h3 id="规则说明-8"><a href="#规则说明-8" class="headerlink" title="规则说明"></a>规则说明</h3><p>QQ号码是从10000开始的，目前最长QQ号码是11位</p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>规则</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>5-11位纯数字，开头不能为0</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="中国邮政编码"><a href="#中国邮政编码" class="headerlink" title="中国邮政编码"></a>中国邮政编码</h2><h4 id="规则说明-9"><a href="#规则说明-9" class="headerlink" title="规则说明"></a>规则说明</h4><table>
+<thead>
+<tr>
+<th>编号</th>
+<th>规则</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>6位纯数字</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>中国目前采用的邮政编码为“四级六码\”制。即每组编码由六位阿拉伯数字组成，这六位数字分别表示省（自治区、直辖市）、邮区、县（市）邮电局和投递局（区）四级。六位数的前两位代表省（自治区、直辖市），第三位代表邮区，第四位代表县（市）邮电局，最后两位是投递局（区）的编号。</p>
+<p>  邮政编码是用阿拉伯数字组成，代表投递邮件的邮局的一种专用代号，也是这个局投递范围内的居民和单位通信的代号。邮政编码是实现邮件机器分拣的邮政通信专用代号，是实现邮政现代化的必需工具，最终目的是使您的信件在传递过程中提高速度和准确性，因此在交寄信件、包裹时务必写明邮政编码。为了实现邮件分拣自动化和邮政网络数字化，加快邮件传递速度。</p>
+<p>  目前世界上已有140多个国家先后实行了邮政编码制度，并以此作为衡量一个国家通信技术和邮政服务水平的标准之一。各国邮政编码规则并不统一。</p>
+</blockquote>
+<p><img src="验证规则说明/58b00bf331311.jpg" alt=""></p>
+<hr>
+<h2 id="IP地址"><a href="#IP地址" class="headerlink" title="IP地址"></a>IP地址</h2><hr>
+<h2 id="弱密码"><a href="#弱密码" class="headerlink" title="弱密码"></a>弱密码</h2><hr>
+<h2 id="中等强度密码"><a href="#中等强度密码" class="headerlink" title="中等强度密码"></a>中等强度密码</h2><hr>
+<h2 id="强密码"><a href="#强密码" class="headerlink" title="强密码"></a>强密码</h2><hr>
+<h2 id="金额"><a href="#金额" class="headerlink" title="金额"></a>金额</h2><hr>
+<h2 id="图片格式"><a href="#图片格式" class="headerlink" title="图片格式"></a>图片格式</h2><hr>
+<h2 id="银行卡号"><a href="#银行卡号" class="headerlink" title="银行卡号"></a>银行卡号</h2><hr>
+<h2 id="微信号"><a href="#微信号" class="headerlink" title="微信号"></a>微信号</h2><hr>
+<h2 id="视频格式"><a href="#视频格式" class="headerlink" title="视频格式"></a>视频格式</h2><hr>
+<h2 id="音频格式"><a href="#音频格式" class="headerlink" title="音频格式"></a>音频格式</h2><hr>
+<h2 id="时间"><a href="#时间" class="headerlink" title="时间"></a>时间</h2><hr>
+<h2 id="年月日"><a href="#年月日" class="headerlink" title="年月日"></a>年月日</h2><hr>
+<h1 id="各类证件号码"><a href="#各类证件号码" class="headerlink" title="各类证件号码"></a>各类证件号码</h1><h2 id="驾驶证号"><a href="#驾驶证号" class="headerlink" title="驾驶证号"></a>驾驶证号</h2><h2 id="行驶证号"><a href="#行驶证号" class="headerlink" title="行驶证号"></a>行驶证号</h2><h2 id="车架号"><a href="#车架号" class="headerlink" title="车架号"></a>车架号</h2><h2 id="发动机号"><a href="#发动机号" class="headerlink" title="发动机号"></a>发动机号</h2><h2 id="车牌号"><a href="#车牌号" class="headerlink" title="车牌号"></a>车牌号</h2><h2 id="军官证号-仅供参考"><a href="#军官证号-仅供参考" class="headerlink" title="军官证号(仅供参考)"></a>军官证号(仅供参考)</h2><h2 id="港澳通行证号-仅供参考"><a href="#港澳通行证号-仅供参考" class="headerlink" title="港澳通行证号(仅供参考)"></a>港澳通行证号(仅供参考)</h2><h2 id="台胞证号-仅供参考"><a href="#台胞证号-仅供参考" class="headerlink" title="台胞证号(仅供参考)"></a>台胞证号(仅供参考)</h2><h2 id="中国护照号"><a href="#中国护照号" class="headerlink" title="中国护照号"></a>中国护照号</h2><h2 id="外国护照号"><a href="#外国护照号" class="headerlink" title="外国护照号"></a>外国护照号</h2><h2 id="回乡证号"><a href="#回乡证号" class="headerlink" title="回乡证号"></a>回乡证号</h2><h1 id="字符类"><a href="#字符类" class="headerlink" title="字符类"></a>字符类</h1><h2 id="匹配中文"><a href="#匹配中文" class="headerlink" title="匹配中文"></a>匹配中文</h2>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/jquery/" rel="tag"># jquery</a>
+          
+            <a href="/tags/validate/" rel="tag"># validate</a>
+          
+            <a href="/tags/验证插件/" rel="tag"># 验证插件</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/07/08/jquery-validate插件自定义验证总结/" rel="next" title="jquery validate插件自定义验证总结">
+                <i class="fa fa-chevron-left"></i> jquery validate插件自定义验证总结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="SOHUCS"></div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="https://avatars7.githubusercontent.com/u/8721378?v=4&s=460"
+               alt="oceanbaby715" />
+          <p class="site-author-name" itemprop="name">oceanbaby715</p>
+           
+              <p class="site-description motion-element" itemprop="description">为什么一看书，就困呢？<br/>因为书，是梦开始的地方。</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/oceanbaby715" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#特殊需求"><span class="nav-number">1.</span> <span class="nav-text">特殊需求</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Email地址"><span class="nav-number">1.1.</span> <span class="nav-text">Email地址</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#规则说明"><span class="nav-number">1.1.1.</span> <span class="nav-text">规则说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见名称组合"><span class="nav-number">1.1.2.</span> <span class="nav-text">常见名称组合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#邮箱-后缀的类型"><span class="nav-number">1.1.3.</span> <span class="nav-text">邮箱@后缀的类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小知识"><span class="nav-number">1.1.4.</span> <span class="nav-text">小知识</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#域名"><span class="nav-number">1.2.</span> <span class="nav-text">域名</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#规则说明-1"><span class="nav-number">1.2.1.</span> <span class="nav-text">规则说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小知识-1"><span class="nav-number">1.2.2.</span> <span class="nav-text">小知识</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网址"><span class="nav-number">1.3.</span> <span class="nav-text">网址</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#规则说明-2"><span class="nav-number">1.3.1.</span> <span class="nav-text">规则说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#示例"><span class="nav-number">1.3.2.</span> <span class="nav-text">示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网址（URL）格式"><span class="nav-number">1.3.3.</span> <span class="nav-text">网址（URL）格式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#protocol（协议）"><span class="nav-number">1.3.3.1.</span> <span class="nav-text">protocol（协议）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hostname（主机名）"><span class="nav-number">1.3.3.2.</span> <span class="nav-text">hostname（主机名）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#path（路径）"><span class="nav-number">1.3.3.3.</span> <span class="nav-text">path（路径）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#query-查询"><span class="nav-number">1.3.3.4.</span> <span class="nav-text">query(查询)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#fragment（信息片断）"><span class="nav-number">1.3.3.5.</span> <span class="nav-text">fragment（信息片断）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#国内手机号码"><span class="nav-number">1.4.</span> <span class="nav-text">国内手机号码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#规则说明-3"><span class="nav-number">1.4.1.</span> <span class="nav-text">规则说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三大运营商最新的手机号段分配情况"><span class="nav-number">1.4.2.</span> <span class="nav-text">三大运营商最新的手机号段分配情况</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#手机和电话号码组成"><span class="nav-number">1.4.3.</span> <span class="nav-text">手机和电话号码组成</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#国内电话号码"><span class="nav-number">1.5.</span> <span class="nav-text">国内电话号码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#规则说明-4"><span class="nav-number">1.5.1.</span> <span class="nav-text">规则说明</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#国际电话号码"><span class="nav-number">1.6.</span> <span class="nav-text">国际电话号码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大陆身份证号（一代）"><span class="nav-number">1.7.</span> <span class="nav-text">大陆身份证号（一代）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#规则说明-5"><span class="nav-number">1.7.1.</span> <span class="nav-text">规则说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#所在省（直辖市、自治区）的代码"><span class="nav-number">1.7.2.</span> <span class="nav-text">所在省（直辖市、自治区）的代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#身份证号码的规则"><span class="nav-number">1.7.3.</span> <span class="nav-text">身份证号码的规则</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#15位身份证号码组成："><span class="nav-number">1.7.3.1.</span> <span class="nav-text">15位身份证号码组成：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#18位身份证号码组成："><span class="nav-number">1.7.3.2.</span> <span class="nav-text">18位身份证号码组成：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大陆身份证号（二代）"><span class="nav-number">1.8.</span> <span class="nav-text">大陆身份证号（二代）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#规则说明-6"><span class="nav-number">1.8.1.</span> <span class="nav-text">规则说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#所在省（直辖市、自治区）的代码-1"><span class="nav-number">1.8.2.</span> <span class="nav-text">所在省（直辖市、自治区）的代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#校验码规则"><span class="nav-number">1.8.3.</span> <span class="nav-text">校验码规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#身份证号码的规则-1"><span class="nav-number">1.8.4.</span> <span class="nav-text">身份证号码的规则</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#15位身份证号码组成：-1"><span class="nav-number">1.8.4.1.</span> <span class="nav-text">15位身份证号码组成：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#18位身份证号码组成：-1"><span class="nav-number">1.8.4.2.</span> <span class="nav-text">18位身份证号码组成：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#完整日期格式"><span class="nav-number">1.9.</span> <span class="nav-text">完整日期格式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#规则说明-7"><span class="nav-number">1.9.0.1.</span> <span class="nav-text">规则说明</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#腾讯QQ号"><span class="nav-number">1.10.</span> <span class="nav-text">腾讯QQ号</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#规则说明-8"><span class="nav-number">1.10.1.</span> <span class="nav-text">规则说明</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中国邮政编码"><span class="nav-number">1.11.</span> <span class="nav-text">中国邮政编码</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#规则说明-9"><span class="nav-number">1.11.0.1.</span> <span class="nav-text">规则说明</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IP地址"><span class="nav-number">1.12.</span> <span class="nav-text">IP地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#弱密码"><span class="nav-number">1.13.</span> <span class="nav-text">弱密码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中等强度密码"><span class="nav-number">1.14.</span> <span class="nav-text">中等强度密码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#强密码"><span class="nav-number">1.15.</span> <span class="nav-text">强密码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#金额"><span class="nav-number">1.16.</span> <span class="nav-text">金额</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片格式"><span class="nav-number">1.17.</span> <span class="nav-text">图片格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#银行卡号"><span class="nav-number">1.18.</span> <span class="nav-text">银行卡号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#微信号"><span class="nav-number">1.19.</span> <span class="nav-text">微信号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#视频格式"><span class="nav-number">1.20.</span> <span class="nav-text">视频格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#音频格式"><span class="nav-number">1.21.</span> <span class="nav-text">音频格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#时间"><span class="nav-number">1.22.</span> <span class="nav-text">时间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#年月日"><span class="nav-number">1.23.</span> <span class="nav-text">年月日</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#各类证件号码"><span class="nav-number">2.</span> <span class="nav-text">各类证件号码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#驾驶证号"><span class="nav-number">2.1.</span> <span class="nav-text">驾驶证号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#行驶证号"><span class="nav-number">2.2.</span> <span class="nav-text">行驶证号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#车架号"><span class="nav-number">2.3.</span> <span class="nav-text">车架号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发动机号"><span class="nav-number">2.4.</span> <span class="nav-text">发动机号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#车牌号"><span class="nav-number">2.5.</span> <span class="nav-text">车牌号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#军官证号-仅供参考"><span class="nav-number">2.6.</span> <span class="nav-text">军官证号(仅供参考)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#港澳通行证号-仅供参考"><span class="nav-number">2.7.</span> <span class="nav-text">港澳通行证号(仅供参考)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#台胞证号-仅供参考"><span class="nav-number">2.8.</span> <span class="nav-text">台胞证号(仅供参考)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中国护照号"><span class="nav-number">2.9.</span> <span class="nav-text">中国护照号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#外国护照号"><span class="nav-number">2.10.</span> <span class="nav-text">外国护照号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#回乡证号"><span class="nav-number">2.11.</span> <span class="nav-text">回乡证号</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字符类"><span class="nav-number">3.</span> <span class="nav-text">字符类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#匹配中文"><span class="nav-number">3.1.</span> <span class="nav-text">匹配中文</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">oceanbaby715</span>
+</div>
+
+
+<div class="powered-by">
+  <a class="theme-link" href="https://github.com/oceanbaby715">Github互动</a>
+</div>
+
+<div class="theme-info">
+  学无止境
+</div>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cyt7qkuN1';
+      var conf = '9a8ff9351c233436637c5a5f06136483';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
