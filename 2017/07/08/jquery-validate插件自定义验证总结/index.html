@@ -93,18 +93,18 @@
 
 
 
-<meta name="description" content="前言平时写网页做表单验证时有两种方式，第一种就是自己手写正则，第二种就是使用验证插件，jQuery Validate是我用的最多的一个插件，但是这个默认提供的一些验证在真正项目中满足不了，所以需要自己手动扩展。对于手写正则这里有个好用的测试工具 正则表达式在线测试地址 前端代码书写示例：12345678$(&quot;#form1&quot;).validate(&amp;#123;    rules: &amp;#123;">
+<meta name="description" content="前言平时写网页做表单验证时有两种方式，第一种就是自己手写正则，第二种就是使用验证插件，jQuery Validate是我用的最多的一个插件，但是这个默认提供的一些验证在真正项目中满足不了，所以需要自己手动扩展。对于手写正则这里有个好用的测试工具 正则表达式在线测试地址 前端代码书写示例：12345678$(&quot;#form&quot;).validate(&amp;#123;    rules: &amp;#123;">
 <meta name="keywords" content="jquery,validate,验证插件">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jquery validate插件自定义验证总结">
 <meta property="og:url" content="http://yoursite.com/2017/07/08/jquery-validate插件自定义验证总结/index.html">
 <meta property="og:site_name" content="Oceanbaby Notes">
-<meta property="og:description" content="前言平时写网页做表单验证时有两种方式，第一种就是自己手写正则，第二种就是使用验证插件，jQuery Validate是我用的最多的一个插件，但是这个默认提供的一些验证在真正项目中满足不了，所以需要自己手动扩展。对于手写正则这里有个好用的测试工具 正则表达式在线测试地址 前端代码书写示例：12345678$(&quot;#form1&quot;).validate(&amp;#123;    rules: &amp;#123;">
+<meta property="og:description" content="前言平时写网页做表单验证时有两种方式，第一种就是自己手写正则，第二种就是使用验证插件，jQuery Validate是我用的最多的一个插件，但是这个默认提供的一些验证在真正项目中满足不了，所以需要自己手动扩展。对于手写正则这里有个好用的测试工具 正则表达式在线测试地址 前端代码书写示例：12345678$(&quot;#form&quot;).validate(&amp;#123;    rules: &amp;#123;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-07-19T04:29:53.907Z">
+<meta property="og:updated_time" content="2017-07-19T10:37:05.691Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jquery validate插件自定义验证总结">
-<meta name="twitter:description" content="前言平时写网页做表单验证时有两种方式，第一种就是自己手写正则，第二种就是使用验证插件，jQuery Validate是我用的最多的一个插件，但是这个默认提供的一些验证在真正项目中满足不了，所以需要自己手动扩展。对于手写正则这里有个好用的测试工具 正则表达式在线测试地址 前端代码书写示例：12345678$(&quot;#form1&quot;).validate(&amp;#123;    rules: &amp;#123;">
+<meta name="twitter:description" content="前言平时写网页做表单验证时有两种方式，第一种就是自己手写正则，第二种就是使用验证插件，jQuery Validate是我用的最多的一个插件，但是这个默认提供的一些验证在真正项目中满足不了，所以需要自己手动扩展。对于手写正则这里有个好用的测试工具 正则表达式在线测试地址 前端代码书写示例：12345678$(&quot;#form&quot;).validate(&amp;#123;    rules: &amp;#123;">
 
 
 
@@ -403,7 +403,7 @@
 
       
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>平时写网页做表单验证时有两种方式，第一种就是自己手写正则，第二种就是使用验证插件，<a href="http://www.runoob.com/jquery/jquery-plugin-validate.html" title="jQuery Validate" target="_blank" rel="external">jQuery Validate</a>是我用的最多的一个插件，但是这个默认提供的一些验证在真正项目中满足不了，所以需要自己手动扩展。<br>对于手写正则这里有个好用的测试工具 <a href="https://regexper.com/" title="正则表达式在线测试地址" target="_blank" rel="external">正则表达式在线测试地址</a></p>
-<p>前端代码书写示例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#form1"</span>).validate(&#123;</div><div class="line">    <span class="attr">rules</span>: &#123;</div><div class="line">        <span class="attr">IdCardNo</span>: <span class="string">"isIdCardNo"</span>,</div><div class="line">    &#125;,</div><div class="line">    <span class="attr">messages</span>: &#123;</div><div class="line">        <span class="attr">IdCardNo</span>: <span class="string">"请输入您的二代身份证号码"</span>,</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>前端代码书写示例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#form"</span>).validate(&#123;</div><div class="line">    <span class="attr">rules</span>: &#123;</div><div class="line">        <span class="attr">isIdCardNo</span>: <span class="string">"isIdCardNo"</span>,</div><div class="line">    &#125;,</div><div class="line">    <span class="attr">messages</span>: &#123;</div><div class="line">        <span class="attr">isIdCardNo</span>: <span class="string">"请输入您的二代身份证号码"</span>,</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
 <h1 id="官方插件验证规则"><a href="#官方插件验证规则" class="headerlink" title="官方插件验证规则"></a>官方插件验证规则</h1><table>
 <thead>
 <tr>
@@ -516,7 +516,7 @@
 <td>1</td>
 <td>isEmail</td>
 <td>Email地址</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=170" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=170</a></td>
+<td><a href="/2017/07/19/验证规则说明/#Email地址" title="查看示例">规则说明</a></td>
 <td></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isEmail" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
@@ -524,7 +524,7 @@
 <td>2</td>
 <td>isDomain</td>
 <td>域名</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=190" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=190</a></td>
+<td><a href="/2017/07/19/验证规则说明/#域名" title="查看示例">规则说明</a></td>
 <td></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isDomain" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
@@ -532,7 +532,7 @@
 <td>3</td>
 <td>isURL</td>
 <td>网址</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=196" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=196</a></td>
+<td><a href="/2017/07/19/验证规则说明/#网址" title="查看示例">规则说明</a></td>
 <td></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isURL" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
@@ -540,7 +540,7 @@
 <td>4</td>
 <td>isMobile</td>
 <td>国内手机号码</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=185" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=185</a></td>
+<td><a href="/2017/07/19/验证规则说明/#国内手机号码" title="查看示例">规则说明</a></td>
 <td></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isMobile" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
@@ -548,7 +548,7 @@
 <td>5</td>
 <td>isTelphone</td>
 <td>国内电话号码</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=188" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=188</a></td>
+<td><a href="/2017/07/19/验证规则说明/#国内电话号码" title="查看示例">规则说明</a></td>
 <td></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isTelphone" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
@@ -556,7 +556,7 @@
 <td>5</td>
 <td></td>
 <td>国际电话号码</td>
-<td>国际电话号码在公司业务中还未接到过需求，待有实际需求时再整理</td>
+<td><a href="/2017/07/19/验证规则说明/#国际电话号码" title="查看示例">规则说明</a></td>
 <td></td>
 <td></td>
 </tr>
@@ -564,7 +564,7 @@
 <td>6</td>
 <td>isOldIdCardNo</td>
 <td>大陆身份证号（一代）</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=187" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=187</a></td>
+<td><a href="/2017/07/19/验证规则说明/#大陆身份证号（一代）" title="查看示例">规则说明</a></td>
 <td></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isOldIdCardNo" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
@@ -572,7 +572,7 @@
 <td>7</td>
 <td>isIdCardNo</td>
 <td>大陆身份证号（二代）</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=186" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=186</a></td>
+<td><a href="/2017/07/19/验证规则说明/#大陆身份证号（二代）" title="查看示例">规则说明</a></td>
 <td></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isIdCardNo" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
@@ -580,7 +580,7 @@
 <td>8</td>
 <td>isFullDate</td>
 <td>完整日期格式</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=195" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=195</a></td>
+<td><a href="/2017/07/19/验证规则说明/#完整日期格式" title="查看示例">规则说明</a></td>
 <td></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isFullDate" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
@@ -588,7 +588,7 @@
 <td>9</td>
 <td>isQQ</td>
 <td>腾讯QQ号</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=171" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=171</a></td>
+<td><a href="/2017/07/19/验证规则说明/#腾讯QQ号" title="查看示例">规则说明</a></td>
 <td></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isQQ" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
@@ -596,7 +596,7 @@
 <td>10</td>
 <td>isZipCode</td>
 <td>中国邮政编码</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=172" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=172</a></td>
+<td><a href="/2017/07/19/验证规则说明/#中国邮政编码" title="查看示例">规则说明</a></td>
 <td></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isZipCode" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
@@ -604,7 +604,7 @@
 <td>11</td>
 <td>isIP</td>
 <td>IP地址</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=180" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=180</a></td>
+<td><a href="/2017/07/19/验证规则说明/#IP地址" title="查看示例">规则说明</a></td>
 <td></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isIP" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
@@ -612,7 +612,7 @@
 <td>12</td>
 <td>isWeakPassword</td>
 <td>弱密码</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=192" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=192</a></td>
+<td><a href="/2017/07/19/验证规则说明/#弱密码" title="查看示例">规则说明</a></td>
 <td></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isWeakPassword" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
@@ -620,7 +620,7 @@
 <td>13</td>
 <td>isMediumPassword</td>
 <td>中等强度密码</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=227" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=227</a></td>
+<td><a href="/2017/07/19/验证规则说明/#中等强度密码" title="查看示例">规则说明</a></td>
 <td></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isMediumPassword" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
@@ -628,7 +628,7 @@
 <td>14</td>
 <td>isStrongPassword</td>
 <td>强密码</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=191" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=191</a></td>
+<td><a href="/2017/07/19/验证规则说明/#强密码" title="查看示例">规则说明</a></td>
 <td></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isStrongPassword" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
@@ -636,7 +636,7 @@
 <td>15</td>
 <td>isMoney</td>
 <td>金额</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=181" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=181</a></td>
+<td><a href="/2017/07/19/验证规则说明/#金额" title="查看示例">规则说明</a></td>
 <td></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isMoney" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
@@ -644,7 +644,7 @@
 <td>16</td>
 <td>isImage</td>
 <td>图片格式</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=174" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=174</a></td>
+<td><a href="/2017/07/19/验证规则说明/#图片格式" title="查看示例">规则说明</a></td>
 <td></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isImage" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
@@ -652,7 +652,7 @@
 <td>17</td>
 <td></td>
 <td>银行卡号</td>
-<td>每个银行的银行卡号规则不同，信用卡与借记卡的规则也不同，没有通用的校验规则</td>
+<td><a href="/2017/07/19/验证规则说明/#银行卡号" title="查看示例">规则说明</a></td>
 <td></td>
 <td></td>
 </tr>
@@ -660,7 +660,7 @@
 <td>18</td>
 <td>isWeixin</td>
 <td>微信号</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=173" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=173</a></td>
+<td><a href="/2017/07/19/验证规则说明/#微信号" title="查看示例">规则说明</a></td>
 <td></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isWeixin" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
@@ -668,7 +668,7 @@
 <td>19</td>
 <td>isVideo</td>
 <td>视频格式</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/home/page/edit/page_id/178" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/home/page/edit/page_id/178</a></td>
+<td><a href="/2017/07/19/验证规则说明/#视频格式" title="查看示例">规则说明</a></td>
 <td></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isVideo" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
@@ -676,7 +676,7 @@
 <td>20</td>
 <td>isAudio</td>
 <td>音频格式</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=179" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=179</a></td>
+<td><a href="/2017/07/19/验证规则说明/#音频格式" title="查看示例">规则说明</a></td>
 <td></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isAudio" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
@@ -684,7 +684,7 @@
 <td>21</td>
 <td>isTime</td>
 <td>时间</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=194" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=194</a></td>
+<td><a href="/2017/07/19/验证规则说明/#时间" title="查看示例">规则说明</a></td>
 <td></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isTime" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
@@ -692,7 +692,7 @@
 <td>22</td>
 <td>isDate</td>
 <td>年月日</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=193" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=193</a></td>
+<td><a href="/2017/07/19/验证规则说明/#年月日" title="查看示例">规则说明</a></td>
 <td></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isDate" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
@@ -705,7 +705,6 @@
 <th>参数</th>
 <th>说明</th>
 <th>验证规则</th>
-<th>备注</th>
 <th>示例</th>
 </tr>
 </thead>
@@ -714,88 +713,77 @@
 <td>1</td>
 <td>isDriverNumber</td>
 <td>驾驶证号</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=186" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=186</a></td>
-<td>驾驶证号码即身份证号码</td>
+<td><a href="/2017/07/19/验证规则说明/#驾驶证号" title="查看示例">规则说明</a></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isDriverNumber" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
 <tr>
 <td>2</td>
 <td></td>
 <td>行驶证号</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=197" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=197</a></td>
-<td>行驶证号即车牌号，使用’isVehicleNumber’进行验证</td>
+<td><a href="/2017/07/19/验证规则说明/#行驶证号" title="查看示例">规则说明</a></td>
 <td></td>
 </tr>
 <tr>
 <td>3</td>
 <td>isVIN</td>
 <td>车架号</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=203" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=203</a></td>
-<td>又称VIN码</td>
+<td><a href="/2017/07/19/验证规则说明/#车架号" title="查看示例">规则说明</a></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isVIN" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
 <tr>
 <td>4</td>
 <td>isEngineNumber</td>
 <td>发动机号</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=204" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=204</a></td>
-<td></td>
+<td><a href="/2017/07/19/验证规则说明/#发动机号" title="查看示例">规则说明</a></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isEngineNumber" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
 <tr>
 <td>5</td>
 <td>isVehicleNumber</td>
 <td>车牌号</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=197" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=197</a></td>
-<td></td>
+<td><a href="/2017/07/19/验证规则说明/#车牌号" title="查看示例">规则说明</a></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isVehicleNumber" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
 <tr>
 <td>6</td>
 <td>isOfficerCard</td>
 <td>军官证号(仅供参考)</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=198" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=198</a></td>
-<td></td>
+<td><a href="/2017/07/19/验证规则说明/#军官证号" title="查看示例">规则说明</a></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isOfficerCard" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
 <tr>
 <td>7</td>
 <td>isHKMacaoCard</td>
 <td>港澳通行证号(仅供参考)</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=199" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=199</a></td>
-<td></td>
+<td><a href="/2017/07/19/验证规则说明/#港澳通行证号" title="查看示例">规则说明</a></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isHKMacaoCard" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
 <tr>
 <td>8</td>
 <td>isTWCompatriotsCard</td>
 <td>台胞证号(仅供参考)</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=201" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=201</a></td>
-<td></td>
+<td><a href="/2017/07/19/验证规则说明/#台胞证号" title="查看示例">规则说明</a></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isTWCompatriotsCard" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
 <tr>
 <td>9</td>
 <td>isChinesePassport</td>
 <td>中国护照号</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=200" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=200</a></td>
-<td></td>
+<td><a href="/2017/07/19/验证规则说明/#中国护照号" title="查看示例">规则说明</a></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isChinesePassport" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
 <tr>
 <td>10</td>
 <td></td>
 <td>外国护照号</td>
-<td>在公司业务中还未接到过需求，待有实际需求时再整理</td>
-<td></td>
+<td><a href="/2017/07/19/验证规则说明/#外国护照号" title="查看示例">规则说明</a></td>
 <td></td>
 </tr>
 <tr>
 <td>11</td>
 <td>isMTPforHKMacao</td>
 <td>回乡证号</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=202" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=202</a></td>
-<td>即港澳居民来往内地通行证</td>
+<td><a href="/2017/07/19/验证规则说明/#回乡证号" title="查看示例">规则说明</a></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isMTPforHKMacao" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
 </tbody>
@@ -887,7 +875,7 @@
 <td>1</td>
 <td>isChinese</td>
 <td>匹配中文</td>
-<td><a href="http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=183" target="_blank" rel="external">http://192.168.0.60:3000/showdoc-master/index.php?s=/23&amp;page_id=183</a></td>
+<td><a href="/2017/07/19/验证规则说明/#匹配中文" title="查看示例">规则说明</a></td>
 <td><a href="http://docs.qxuninfo.com/QxunPluginsDemo/QxunForm-plugin/demo/customvalidate/index.html?rules=isChinese" title="查看示例" target="_blank" rel="external">查看示例</a></td>
 </tr>
 <tr>
