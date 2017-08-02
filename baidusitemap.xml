@@ -4,6 +4,34 @@
 
     
   <url>
+    <loc>http://www.intolearn.com/2017/08/02/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2%E6%A8%A1%E6%9D%BF%E7%A4%BA%E4%BE%8B/</loc>
+    <lastmod>2017-08-02T04:04:28.845Z</lastmod>
+    <data>
+        <display>
+        <title>移动端页面模板示例</title>
+        <pubTime>2017-08-02T03:58:15.000Z</pubTime>
+        
+        <tag>html</tag>
+         
+        <tag>移动端</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="http://www.intolearn.com/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+             
+              <breadCrumb title="HTML" url="http://www.intolearn.com/categories/%E5%89%8D%E7%AB%AF/HTML/"/>
+          
+             
+              <breadCrumb title="实用类" url="http://www.intolearn.com/categories/%E5%89%8D%E7%AB%AF/HTML/%E5%AE%9E%E7%94%A8%E7%B1%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.intolearn.com/2017/07/31/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8js%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/</loc>
     <lastmod>2017-08-02T03:50:11.515Z</lastmod>
     <data>
@@ -11,11 +39,11 @@
         <title>前端常用js方法整理</title>
         <pubTime>2017-07-31T07:53:20.000Z</pubTime>
         
+        <tag>jquery</tag>
+         
         <tag>前端</tag>
          
         <tag>javascript</tag>
-         
-        <tag>jquery</tag>
          
         <tag>表单</tag>
          
