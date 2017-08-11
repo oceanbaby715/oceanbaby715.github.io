@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.intolearn.com/tool/index.html</loc>
+    
+    <lastmod>2017-08-11T10:02:49.007Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.intolearn.com/resources/index.html</loc>
+    
+    <lastmod>2017-08-11T09:40:25.912Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.intolearn.com/about/index.html</loc>
+    
+    <lastmod>2017-08-11T08:40:50.005Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.intolearn.com/2017/08/02/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B5%E9%9D%A2%E6%A8%A1%E6%9D%BF%E7%A4%BA%E4%BE%8B/</loc>
     
     <lastmod>2017-08-02T04:04:28.845Z</lastmod>
@@ -103,13 +124,6 @@
     <loc>http://www.intolearn.com/categories/index.html</loc>
     
     <lastmod>2017-07-18T14:20:52.025Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.intolearn.com/about/index.html</loc>
-    
-    <lastmod>2017-07-18T14:20:52.001Z</lastmod>
     
   </url>
   
