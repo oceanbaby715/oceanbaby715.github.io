@@ -2967,5 +2967,9 @@ pre .javascript .function {
 @media (max-width: 767px) {
   .post-body {
     text-align: justify;
+    word-break: break-all;
   }
+}
+.post-body{
+  word-break: break-all;
 }
