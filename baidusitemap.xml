@@ -4,6 +4,29 @@
 
     
   <url>
+    <loc>http://www.intolearn.com/2017/08/15/%E7%BD%91%E9%A1%B5%E7%89%88%E7%AE%80%E6%98%93%E4%B8%B4%E6%97%B6%E8%AE%B0%E4%BA%8B%E6%9C%AC/</loc>
+    <lastmod>2017-08-15T07:47:46.022Z</lastmod>
+    <data>
+        <display>
+        <title>网页版简易临时记事本</title>
+        <pubTime>2017-08-15T07:28:33.000Z</pubTime>
+        
+        <tag>记事本</tag>
+         
+         
+           
+             
+              <breadCrumb title="日常" url="http://www.intolearn.com/categories/%E6%97%A5%E5%B8%B8/"/>
+          
+             
+              <breadCrumb title="实用类" url="http://www.intolearn.com/categories/%E6%97%A5%E5%B8%B8/%E5%AE%9E%E7%94%A8%E7%B1%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.intolearn.com/2017/08/14/windows%E5%AE%9E%E7%94%A8%E8%84%9A%E6%9C%AC/</loc>
     <lastmod>2017-08-14T10:06:01.678Z</lastmod>
     <data>
@@ -115,11 +138,11 @@
         <title>前端常用js方法整理</title>
         <pubTime>2017-07-31T07:53:20.000Z</pubTime>
         
+        <tag>jquery</tag>
+         
         <tag>前端</tag>
          
         <tag>javascript</tag>
-         
-        <tag>jquery</tag>
          
         <tag>表单</tag>
          
@@ -147,9 +170,9 @@
         <title>CSS文本溢出显示省略号</title>
         <pubTime>2017-07-24T07:54:33.000Z</pubTime>
         
-        <tag>省略号</tag>
-         
         <tag>css</tag>
+         
+        <tag>省略号</tag>
          
         <tag>溢出</tag>
          
@@ -177,9 +200,9 @@
         <title>div中各种垂直居中的方法</title>
         <pubTime>2017-07-24T07:40:02.000Z</pubTime>
         
-        <tag>css</tag>
-         
         <tag>垂直居中</tag>
+         
+        <tag>css</tag>
          
         <tag>html</tag>
          
