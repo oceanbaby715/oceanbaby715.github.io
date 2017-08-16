@@ -4,6 +4,37 @@
 
     
   <url>
+    <loc>http://www.intolearn.com/2017/07/19/%E9%AA%8C%E8%AF%81%E8%A7%84%E5%88%99%E8%AF%B4%E6%98%8E/</loc>
+    <lastmod>2017-08-16T02:48:33.263Z</lastmod>
+    <data>
+        <display>
+        <title>验证规则说明</title>
+        <pubTime>2017-07-19T04:27:55.000Z</pubTime>
+        
+        <tag>jquery</tag>
+         
+        <tag>validate</tag>
+         
+        <tag>验证插件</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="http://www.intolearn.com/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+             
+              <breadCrumb title="Jquery" url="http://www.intolearn.com/categories/%E5%89%8D%E7%AB%AF/Jquery/"/>
+          
+             
+              <breadCrumb title="插件" url="http://www.intolearn.com/categories/%E5%89%8D%E7%AB%AF/Jquery/%E6%8F%92%E4%BB%B6/"/>
+          
+             
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.intolearn.com/2017/08/15/%E7%BD%91%E9%A1%B5%E7%89%88%E7%AE%80%E6%98%93%E4%B8%B4%E6%97%B6%E8%AE%B0%E4%BA%8B%E6%9C%AC/</loc>
     <lastmod>2017-08-15T07:47:46.022Z</lastmod>
     <data>
@@ -247,37 +278,6 @@
              
               <breadCrumb title="实用类" url="http://www.intolearn.com/categories/%E5%89%8D%E7%AB%AF/HTML/%E5%AE%9E%E7%94%A8%E7%B1%BB/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.intolearn.com/2017/07/19/%E9%AA%8C%E8%AF%81%E8%A7%84%E5%88%99%E8%AF%B4%E6%98%8E/</loc>
-    <lastmod>2017-07-24T07:31:13.575Z</lastmod>
-    <data>
-        <display>
-        <title>验证规则说明</title>
-        <pubTime>2017-07-19T04:27:55.000Z</pubTime>
-        
-        <tag>jquery</tag>
-         
-        <tag>validate</tag>
-         
-        <tag>验证插件</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端" url="http://www.intolearn.com/categories/%E5%89%8D%E7%AB%AF/"/>
-          
-             
-              <breadCrumb title="Jquery" url="http://www.intolearn.com/categories/%E5%89%8D%E7%AB%AF/Jquery/"/>
-          
-             
-              <breadCrumb title="插件" url="http://www.intolearn.com/categories/%E5%89%8D%E7%AB%AF/Jquery/%E6%8F%92%E4%BB%B6/"/>
-          
-             
         </display>
     </data>
     </url>
