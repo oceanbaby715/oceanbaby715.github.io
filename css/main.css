@@ -1091,6 +1091,7 @@ pre .javascript .function {
 }
 .post-body {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  word-break: break-all;
 }
 @media (max-width: 767px) {
   .post-body {
@@ -1679,7 +1680,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #cf9d37;
+  background: #ff5932;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2967,9 +2968,5 @@ pre .javascript .function {
 @media (max-width: 767px) {
   .post-body {
     text-align: justify;
-    word-break: break-all;
   }
-}
-.post-body{
-  word-break: break-all;
 }
